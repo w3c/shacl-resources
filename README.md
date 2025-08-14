@@ -21,4 +21,4 @@ All content in this repository is licensed for use using the [W3C Software and D
 
 ## Contact
 
-Contact the Data Shapes Working Group via the  [W3C's Data Shapes WG web page](https://www.w3.org/groups/wg/data-shapes/).
+Contact the Data Shapes Working Group via the [W3C's Data Shapes WG web page](https://www.w3.org/groups/wg/data-shapes/).
