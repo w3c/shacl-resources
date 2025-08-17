@@ -1,0 +1,19 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+
+sh:ShaclShaclUnion
+    a owl:Ontology ;
+    prof:isProfileOf
+        sh:ShaclShaclCore ,
+        sh:ShaclShaclCompactSyntax ,
+        sh:ShaclShaclInferenceRules ,
+        sh:ShaclShaclNodeExpressions ,
+        sh:ShaclShaclProfiling ,
+        sh:ShaclShaclSparql ,
+        sh:ShaclShaclUserInterface ;
+    rdfs:label "SHACL for SHACL Union Validator"@en ;
+    rdfs:comment "This shapes graph can be used to validate any SHACL 1.2 shapes graphs. It is the union of all specification-specific SHACL 1.2 shapes validators."@en ;
+.
