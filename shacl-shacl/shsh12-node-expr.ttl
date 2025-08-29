@@ -1,1 +1,14 @@
-# SHACL 1.2 Node Expressions SHACL-SHACL validator
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shsh: <http://www.w3.org/ns/shacl-shacl#>
+
+
+shsh:ShaclShaclNodeExpressions
+    a owl:Ontology ;
+    owl:imports shsh:ShaclShaclCore ;
+    prof:isProfileOf shsh:ShaclShaclCore ;
+    rdfs:label "SHACL 1.2 Node Expressions SHACL-SHACL validator"@en ;
+    rdfs:comment "This shapes graph can be used to validate any SHACL 1.2 shapes graphs exercising Node Expression functionality."@en ;
+.

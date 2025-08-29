@@ -1,1 +1,11 @@
-# SHACL 1.2 Core SHACL-SHACL validator
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shsh: <http://www.w3.org/ns/shacl-shacl#>
+
+
+shsh:ShaclShaclCore
+    a owl:Ontology ;
+    rdfs:label "SHACL 1.2 Core SHACL-SHACL validator"@en ;
+    rdfs:comment "This shapes graph can be used to validate any SHACL 1.2 shapes graphs for core syntactic requirements specified by SHACL 1.2."@en ;
+.
