@@ -15,6 +15,6 @@ shsh:ShaclShaclUnion
         shsh:ShaclShaclProfiling ,
         shsh:ShaclShaclSparql ,
         shsh:ShaclShaclUserInterface ;
-    rdfs:label "SHACL for SHACL Union Validator"@en ;
+    rdfs:label "SHACL 1.2 Union SHACL-SHACL Validator"@en ;
     rdfs:comment "This shapes graph can be used to validate any SHACL 1.2 shapes graphs. It is the union of all specification-specific SHACL 1.2 shapes validators."@en ;
 .
