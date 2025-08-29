@@ -7,6 +7,13 @@ PREFIX shsh: <http://www.w3.org/ns/shacl-shacl#>
 
 shsh:ShaclShaclUnion
     a owl:Ontology ;
+    owl:imports
+        shsh:ShaclShaclCompactSyntax ,
+        shsh:ShaclShaclInferenceRules ,
+        shsh:ShaclShaclNodeExpressions ,
+        shsh:ShaclShaclProfiling ,
+        shsh:ShaclShaclSparql ,
+        shsh:ShaclShaclUserInterface ;
     prof:isProfileOf
         shsh:ShaclShaclCore ,
         shsh:ShaclShaclCompactSyntax ,
