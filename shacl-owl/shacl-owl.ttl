@@ -339,6 +339,10 @@ sh:maxLength
 	a owl:AnnotationProperty ;
 	.
 
+sh:maxListLength
+	a owl:AnnotationProperty ;
+	.
+
 sh:memberShape
 	a owl:AnnotationProperty ;
 	.
@@ -360,6 +364,10 @@ sh:minInclusive
 	.
 
 sh:minLength
+	a owl:AnnotationProperty ;
+	.
+
+sh:minListLength
 	a owl:AnnotationProperty ;
 	.
 
@@ -568,6 +576,10 @@ sh:union
 	.
 
 sh:uniqueLang
+	a owl:AnnotationProperty ;
+	.
+
+sh:uniqueMembers
 	a owl:AnnotationProperty ;
 	.
 
