@@ -159,6 +159,10 @@ sh:Shape
 	a owl:Class ;
 	.
 
+sh:ShapeClass
+	a owl:Class ;
+	.
+
 sh:Target
 	a owl:Class ;
 	.
