@@ -395,6 +395,10 @@ sh:node
 	a owl:AnnotationProperty ;
 	.
 
+sh:nodeByExpression
+	a owl:AnnotationProperty ;
+	.
+
 sh:nodeKind
 	a owl:AnnotationProperty ;
 	.
