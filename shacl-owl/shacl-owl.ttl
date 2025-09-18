@@ -55,6 +55,14 @@ sh:JSValidator
 	a owl:Class ;
 	.
 
+sh:ListParameterExpression
+	a owl:Class ;
+	.
+
+sh:NamedParameterExpression
+	a owl:Class ;
+	.
+
 sh:NodeKind
 	a owl:Class ;
 	.
@@ -108,6 +116,10 @@ sh:SPARQLConstructExecutable
 	.
 
 sh:SPARQLExecutable
+	a owl:Class ;
+	.
+
+sh:SPARQLExprExpression
 	a owl:Class ;
 	.
 
