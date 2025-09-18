@@ -455,6 +455,14 @@ sh:qualifiedValueShapesDisjoint
 	a owl:AnnotationProperty ;
 	.
 
+sh:reificationRequired
+	a owl:AnnotationProperty ;
+	.
+
+sh:reifierShape
+	a owl:AnnotationProperty ;
+	.
+
 sh:result
 	a owl:AnnotationProperty ;
 	.
