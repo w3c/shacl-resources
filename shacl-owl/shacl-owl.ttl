@@ -215,6 +215,10 @@ sh:closed
 	a owl:AnnotationProperty ;
 	.
 
+sh:codeIdentifier
+	a owl:AnnotationProperty ;
+	.
+
 sh:condition
 	a owl:AnnotationProperty ;
 	.
