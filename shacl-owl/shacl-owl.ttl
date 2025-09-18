@@ -499,6 +499,10 @@ sh:shapesGraphWellFormed
 	a owl:AnnotationProperty ;
 	.
 
+sh:singleLine
+	a owl:AnnotationProperty ;
+	.
+
 sh:sourceConstraint
 	a owl:AnnotationProperty ;
 	.
