@@ -151,6 +151,10 @@ sh:SPARQLUpdateExecutable
 	a owl:Class ;
 	.
 
+sh:SelectExpression
+	a owl:Class ;
+	.
+
 sh:Severity
 	a owl:Class ;
 	.
