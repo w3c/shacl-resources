@@ -339,6 +339,10 @@ sh:maxLength
 	a owl:AnnotationProperty ;
 	.
 
+sh:memberShape
+	a owl:AnnotationProperty ;
+	.
+
 sh:message
 	a owl:AnnotationProperty ;
 	.
