@@ -207,6 +207,10 @@ sh:ask
 	a owl:AnnotationProperty ;
 	.
 
+sh:bodyExpression
+	a owl:AnnotationProperty ;
+	.
+
 sh:class
 	a owl:AnnotationProperty ;
 	.
