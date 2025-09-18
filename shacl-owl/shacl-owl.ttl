@@ -511,6 +511,10 @@ sh:singleLine
 	a owl:AnnotationProperty ;
 	.
 
+sh:someValue
+	a owl:AnnotationProperty ;
+	.
+
 sh:sourceConstraint
 	a owl:AnnotationProperty ;
 	.
