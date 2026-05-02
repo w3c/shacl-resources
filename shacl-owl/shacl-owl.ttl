@@ -555,6 +555,10 @@ sh:severity
 	a owl:AnnotationProperty ;
 	.
 
+sh:shape
+	a owl:AnnotationProperty ;
+	.
+
 sh:shapesGraph
 	a owl:AnnotationProperty ;
 	.
@@ -620,6 +624,10 @@ sh:targetObjectsOf
 	.
 
 sh:targetSubjectsOf
+	a owl:AnnotationProperty ;
+	.
+
+sh:targetWhere
 	a owl:AnnotationProperty ;
 	.
 
