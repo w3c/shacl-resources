@@ -243,6 +243,10 @@ sh:condition
 	a owl:AnnotationProperty ;
 	.
 
+sh:conformanceDisallows
+	a owl:AnnotationProperty ;
+	.
+
 sh:conforms
 	a owl:AnnotationProperty ;
 	.
