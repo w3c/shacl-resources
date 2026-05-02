@@ -296,7 +296,10 @@ sh:expression
 	.
 
 sh:filterShape
-	a owl:AnnotationProperty ;
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
 	.
 
 sh:flags
@@ -332,7 +335,10 @@ sh:intent
 	.
 
 sh:intersection
-	a owl:AnnotationProperty ;
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
 	.
 
 sh:inversePath
@@ -448,7 +454,10 @@ sh:nodeValidator
 	.
 
 sh:nodes
-	a owl:AnnotationProperty ;
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
 	.
 
 sh:not
@@ -648,7 +657,10 @@ sh:targetWhere
 	.
 
 sh:union
-	a owl:AnnotationProperty ;
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
 	.
 
 sh:uniqueLang
