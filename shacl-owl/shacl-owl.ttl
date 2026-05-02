@@ -191,6 +191,10 @@ sh:Validator
 	a owl:Class ;
 	.
 
+sh:agentInstruction
+	a owl:AnnotationProperty ;
+	.
+
 sh:alternativePath
 	a owl:AnnotationProperty ;
 	.
@@ -295,6 +299,10 @@ sh:focusNode
 	a owl:AnnotationProperty ;
 	.
 
+sh:formalized
+	a owl:AnnotationProperty ;
+	.
+
 sh:group
 	a owl:AnnotationProperty ;
 	.
@@ -308,6 +316,10 @@ sh:ignoredProperties
 	.
 
 sh:in
+	a owl:AnnotationProperty ;
+	.
+
+sh:intent
 	a owl:AnnotationProperty ;
 	.
 
