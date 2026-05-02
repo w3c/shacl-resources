@@ -83,11 +83,23 @@ sh:ListParameterExpression
 	a owl:Class ;
 	.
 
+sh:ListParameterExpressionFunction
+	a owl:Class ;
+	.
+
 sh:NamedParameterExpression
 	a owl:Class ;
 	.
 
+sh:NamedParameterExpressionFunction
+	a owl:Class ;
+	.
+
 sh:NodeExpression
+	a owl:Class ;
+	.
+
+sh:NodeExpressionFunction
 	a owl:Class ;
 	.
 
