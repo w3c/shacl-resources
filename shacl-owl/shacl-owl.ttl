@@ -63,6 +63,10 @@ sh:NamedParameterExpression
 	a owl:Class ;
 	.
 
+sh:NodeExpression
+	a owl:Class ;
+	.
+
 sh:NodeKind
 	a owl:Class ;
 	.
@@ -344,6 +348,10 @@ sh:jsLibrary
 	.
 
 sh:jsLibraryURL
+	a owl:AnnotationProperty ;
+	.
+
+sh:keyParameter
 	a owl:AnnotationProperty ;
 	.
 
