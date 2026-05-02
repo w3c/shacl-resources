@@ -619,6 +619,10 @@ sh:uniqueMembers
 	a owl:AnnotationProperty ;
 	.
 
+sh:unit
+	a owl:AnnotationProperty ;
+	.
+
 sh:update
 	a owl:AnnotationProperty ;
 	.
