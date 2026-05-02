@@ -543,6 +543,10 @@ sh:returnType
 	a owl:AnnotationProperty ;
 	.
 
+sh:rootClass
+	a owl:AnnotationProperty ;
+	.
+
 sh:rule
 	a owl:AnnotationProperty ;
 	.
