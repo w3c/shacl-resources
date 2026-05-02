@@ -595,6 +595,10 @@ sh:subject
 	a owl:AnnotationProperty ;
 	.
 
+sh:subsetOf
+	a owl:AnnotationProperty ;
+	.
+
 sh:suggestedShapesGraph
 	a owl:AnnotationProperty ;
 	.
