@@ -24,35 +24,59 @@ sh:Function
 	.
 
 sh:JSConstraint
-	a owl:Class ;
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
 	.
 
 sh:JSExecutable
-	a owl:Class ;
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
 	.
 
 sh:JSFunction
-	a owl:Class ;
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
 	.
 
 sh:JSLibrary
-	a owl:Class ;
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
 	.
 
 sh:JSRule
-	a owl:Class ;
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
 	.
 
 sh:JSTarget
-	a owl:Class ;
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
 	.
 
 sh:JSTargetType
-	a owl:Class ;
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
 	.
 
 sh:JSValidator
-	a owl:Class ;
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
 	.
 
 sh:ListParameterExpression
@@ -346,19 +370,31 @@ sh:inversePath
 	.
 
 sh:js
-	a owl:AnnotationProperty ;
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
 	.
 
 sh:jsFunctionName
-	a owl:AnnotationProperty ;
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
 	.
 
 sh:jsLibrary
-	a owl:AnnotationProperty ;
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
 	.
 
 sh:jsLibraryURL
-	a owl:AnnotationProperty ;
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
 	.
 
 sh:keyParameter
