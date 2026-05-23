@@ -19,7 +19,15 @@ sh:ConstraintComponent
 	a owl:Class ;
 	.
 
+sh:DataGraph
+	a owl:Class ;
+	.
+
 sh:Function
+	a owl:Class ;
+	.
+
+sh:Graph
 	a owl:Class ;
 	.
 
@@ -208,6 +216,10 @@ sh:Shape
 	.
 
 sh:ShapeClass
+	a owl:Class ;
+	.
+
+sh:ShapesGraph
 	a owl:Class ;
 	.
 
