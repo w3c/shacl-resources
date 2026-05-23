@@ -155,6 +155,10 @@ sh:SPARQLConstructExecutable
 	a owl:Class ;
 	.
 
+sh:SPARQLDescribeExecutable
+	a owl:Class ;
+	.
+
 sh:SPARQLExecutable
 	a owl:Class ;
 	.
@@ -304,6 +308,10 @@ sh:declare
 	.
 
 sh:defaultValue
+	a owl:AnnotationProperty ;
+	.
+
+sh:describe
 	a owl:AnnotationProperty ;
 	.
 
