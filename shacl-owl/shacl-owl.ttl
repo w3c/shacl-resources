@@ -303,6 +303,10 @@ sh:conforms
 	a owl:AnnotationProperty ;
 	.
 
+sh:conformsTo
+	a owl:AnnotationProperty ;
+	.
+
 sh:construct
 	a owl:AnnotationProperty ;
 	.
@@ -748,6 +752,14 @@ sh:unit
 	.
 
 sh:update
+	a owl:AnnotationProperty ;
+	.
+
+sh:usedShapesGraph
+	a owl:AnnotationProperty ;
+	.
+
+sh:validationReport
 	a owl:AnnotationProperty ;
 	.
 
