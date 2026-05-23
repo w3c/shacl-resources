@@ -2,6 +2,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shnex: <http://www.w3.org/ns/shacl-node-expr#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.w3.org/ns/shacl-owl#>
@@ -780,6 +781,198 @@ sh:zeroOrMorePath
 	.
 
 sh:zeroOrOnePath
+	a owl:AnnotationProperty ;
+	.
+
+shnex:ConcatExpression
+	a owl:Class ;
+	.
+
+shnex:CountExpression
+	a owl:Class ;
+	.
+
+shnex:DistinctExpression
+	a owl:Class ;
+	.
+
+shnex:EmptyExpression
+	a owl:Class ;
+	.
+
+shnex:ExistsExpression
+	a owl:Class ;
+	.
+
+shnex:FilterShapeExpression
+	a owl:Class ;
+	.
+
+shnex:FindFirstExpression
+	a owl:Class ;
+	.
+
+shnex:FlatMapExpression
+	a owl:Class ;
+	.
+
+shnex:IfExpression
+	a owl:Class ;
+	.
+
+shnex:InstancesOfExpression
+	a owl:Class ;
+	.
+
+shnex:IntersectionExpression
+	a owl:Class ;
+	.
+
+shnex:LimitExpression
+	a owl:Class ;
+	.
+
+shnex:ListExpression
+	a owl:Class ;
+	.
+
+shnex:MatchAllExpression
+	a owl:Class ;
+	.
+
+shnex:MaxExpression
+	a owl:Class ;
+	.
+
+shnex:MinExpression
+	a owl:Class ;
+	.
+
+shnex:NodesMatchingExpression
+	a owl:Class ;
+	.
+
+shnex:OffsetExpression
+	a owl:Class ;
+	.
+
+shnex:OrderByExpression
+	a owl:Class ;
+	.
+
+shnex:PathValuesExpression
+	a owl:Class ;
+	.
+
+shnex:RemoveExpression
+	a owl:Class ;
+	.
+
+shnex:SumExpression
+	a owl:Class ;
+	.
+
+shnex:VarExpression
+	a owl:Class ;
+	.
+
+shnex:concat
+	a owl:AnnotationProperty ;
+	.
+
+shnex:count
+	a owl:AnnotationProperty ;
+	.
+
+shnex:desc
+	a owl:AnnotationProperty ;
+	.
+
+shnex:distinct
+	a owl:AnnotationProperty ;
+	.
+
+shnex:else
+	a owl:AnnotationProperty ;
+	.
+
+shnex:exists
+	a owl:AnnotationProperty ;
+	.
+
+shnex:filterShape
+	a owl:AnnotationProperty ;
+	.
+
+shnex:findFirst
+	a owl:AnnotationProperty ;
+	.
+
+shnex:flatMap
+	a owl:AnnotationProperty ;
+	.
+
+shnex:if
+	a owl:AnnotationProperty ;
+	.
+
+shnex:instancesOf
+	a owl:AnnotationProperty ;
+	.
+
+shnex:intersection
+	a owl:AnnotationProperty ;
+	.
+
+shnex:limit
+	a owl:AnnotationProperty ;
+	.
+
+shnex:matchAll
+	a owl:AnnotationProperty ;
+	.
+
+shnex:max
+	a owl:AnnotationProperty ;
+	.
+
+shnex:min
+	a owl:AnnotationProperty ;
+	.
+
+shnex:nodes
+	a owl:AnnotationProperty ;
+	.
+
+shnex:nodesMatching
+	a owl:AnnotationProperty ;
+	.
+
+shnex:offset
+	a owl:AnnotationProperty ;
+	.
+
+shnex:orderBy
+	a owl:AnnotationProperty ;
+	.
+
+shnex:pathValues
+	a owl:AnnotationProperty ;
+	.
+
+shnex:remove
+	a owl:AnnotationProperty ;
+	.
+
+shnex:sum
+	a owl:AnnotationProperty ;
+	.
+
+shnex:then
+	a owl:AnnotationProperty ;
+	.
+
+shnex:var
 	a owl:AnnotationProperty ;
 	.
 
