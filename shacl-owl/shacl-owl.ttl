@@ -307,7 +307,11 @@ sh:conforms
 	.
 
 sh:conformsTo
-	a owl:AnnotationProperty ;
+	a owl:ObjectProperty ;
+	rdfs:seeAlso
+		<https://github.com/w3c/dx-prof/issues/29> ,
+		<https://github.com/w3c/dx-prof/issues/59>
+		;
 	.
 
 sh:construct
