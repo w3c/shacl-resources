@@ -3,6 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix shnex: <http://www.w3.org/ns/shacl-node-expr#> .
+@prefix shnex-sparql: <http://www.w3.org/ns/shacl-node-expr-sparql#> .
+@prefix sparql: <http://www.w3.org/ns/sparql#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.w3.org/ns/shacl-owl#>
@@ -974,5 +976,325 @@ shnex:then
 
 shnex:var
 	a owl:AnnotationProperty ;
+	.
+
+shnex-sparql:category
+	a owl:AnnotationProperty ;
+	.
+
+shnex-sparql:example
+	a owl:AnnotationProperty ;
+	.
+
+shnex-sparql:infixOperator
+	a owl:AnnotationProperty ;
+	.
+
+sparql:abs
+	a owl:Class ;
+	.
+
+sparql:bnode
+	a owl:Class ;
+	.
+
+sparql:bound
+	a owl:Class ;
+	.
+
+sparql:ceil
+	a owl:Class ;
+	.
+
+sparql:coalesce
+	a owl:Class ;
+	.
+
+sparql:concat
+	a owl:Class ;
+	.
+
+sparql:contains
+	a owl:Class ;
+	.
+
+sparql:datatype
+	a owl:Class ;
+	.
+
+sparql:day
+	a owl:Class ;
+	.
+
+sparql:divide
+	a owl:Class ;
+	.
+
+sparql:encode
+	a owl:Class ;
+	.
+
+sparql:equals
+	a owl:Class ;
+	.
+
+sparql:floor
+	a owl:Class ;
+	.
+
+sparql:greater-than
+	a owl:Class ;
+	.
+
+sparql:greater-than-or-equal
+	a owl:Class ;
+	.
+
+sparql:hasLang
+	a owl:Class ;
+	.
+
+sparql:hasLangdir
+	a owl:Class ;
+	.
+
+sparql:hours
+	a owl:Class ;
+	.
+
+sparql:if
+	a owl:Class ;
+	.
+
+sparql:iri
+	a owl:Class ;
+	.
+
+sparql:isBlank
+	a owl:Class ;
+	.
+
+sparql:isIRI
+	a owl:Class ;
+	.
+
+sparql:isLiteral
+	a owl:Class ;
+	.
+
+sparql:isNumeric
+	a owl:Class ;
+	.
+
+sparql:isTriple
+	a owl:Class ;
+	.
+
+sparql:isURI
+	a owl:Class ;
+	.
+
+sparql:lang
+	a owl:Class ;
+	.
+
+sparql:langMatches
+	a owl:Class ;
+	.
+
+sparql:langdir
+	a owl:Class ;
+	.
+
+sparql:lcase
+	a owl:Class ;
+	.
+
+sparql:less-than
+	a owl:Class ;
+	.
+
+sparql:less-than-or-equal
+	a owl:Class ;
+	.
+
+sparql:logical-and
+	a owl:Class ;
+	.
+
+sparql:logical-not
+	a owl:Class ;
+	.
+
+sparql:logical-or
+	a owl:Class ;
+	.
+
+sparql:md5
+	a owl:Class ;
+	.
+
+sparql:minutes
+	a owl:Class ;
+	.
+
+sparql:month
+	a owl:Class ;
+	.
+
+sparql:multiply
+	a owl:Class ;
+	.
+
+sparql:not-equals
+	a owl:Class ;
+	.
+
+sparql:now
+	a owl:Class ;
+	.
+
+sparql:object
+	a owl:Class ;
+	.
+
+sparql:plus
+	a owl:Class ;
+	.
+
+sparql:predicate
+	a owl:Class ;
+	.
+
+sparql:rand
+	a owl:Class ;
+	.
+
+sparql:regex
+	a owl:Class ;
+	.
+
+sparql:replace
+	a owl:Class ;
+	.
+
+sparql:round
+	a owl:Class ;
+	.
+
+sparql:sameTerm
+	a owl:Class ;
+	.
+
+sparql:sameValue
+	a owl:Class ;
+	.
+
+sparql:seconds
+	a owl:Class ;
+	.
+
+sparql:sha1
+	a owl:Class ;
+	.
+
+sparql:sha256
+	a owl:Class ;
+	.
+
+sparql:sha384
+	a owl:Class ;
+	.
+
+sparql:sha512
+	a owl:Class ;
+	.
+
+sparql:str
+	a owl:Class ;
+	.
+
+sparql:strafter
+	a owl:Class ;
+	.
+
+sparql:strbefore
+	a owl:Class ;
+	.
+
+sparql:strdt
+	a owl:Class ;
+	.
+
+sparql:strends
+	a owl:Class ;
+	.
+
+sparql:strlang
+	a owl:Class ;
+	.
+
+sparql:strlangdir
+	a owl:Class ;
+	.
+
+sparql:strlen
+	a owl:Class ;
+	.
+
+sparql:strstarts
+	a owl:Class ;
+	.
+
+sparql:struuid
+	a owl:Class ;
+	.
+
+sparql:subject
+	a owl:Class ;
+	.
+
+sparql:substr
+	a owl:Class ;
+	.
+
+sparql:subtract
+	a owl:Class ;
+	.
+
+sparql:timezone
+	a owl:Class ;
+	.
+
+sparql:triple
+	a owl:Class ;
+	.
+
+sparql:tz
+	a owl:Class ;
+	.
+
+sparql:ucase
+	a owl:Class ;
+	.
+
+sparql:unary-minus
+	a owl:Class ;
+	.
+
+sparql:unary-plus
+	a owl:Class ;
+	.
+
+sparql:uri
+	a owl:Class ;
+	.
+
+sparql:uuid
+	a owl:Class ;
+	.
+
+sparql:year
+	a owl:Class ;
 	.
 
