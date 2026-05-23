@@ -11,7 +11,7 @@
 	a owl:Ontology ;
 	rdfs:label "SHACL concepts as OWL"@en ;
 	rdfs:comment "This ontology graph can be used to supplement ontologies that mix OWL and SHACL, for the benefit of OWL tools that require all classes and properties be explicitly designated as OWL classes and one of the three OWL property types.  This graph designates all SHACL properties as OWL Annotation Properties, separating them from usage with OWL Restrictions and constraints on ranges."@en ;
-	owl:versionIRI <http://www.w3.org/ns/shacl-owl#TBD> ;
+	owl:versionIRI <http://www.w3.org/ns/shacl-owl#1.2> ;
 	.
 
 sh:AbstractResult
