@@ -1,0 +1,1304 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shnex: <http://www.w3.org/ns/shacl-node-expr#> .
+@prefix shnex-sparql: <http://www.w3.org/ns/shacl-node-expr-sparql#> .
+@prefix sparql: <http://www.w3.org/ns/sparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/ns/shacl-owl#>
+	a owl:Ontology ;
+	rdfs:label "SHACL concepts as OWL"@en ;
+	rdfs:comment "This ontology graph can be used to supplement ontologies that mix OWL and SHACL, for the benefit of OWL tools that require all classes and properties be explicitly designated as OWL classes and one of the three OWL property types.  This graph designates all SHACL properties as OWL Annotation Properties, separating them from usage with OWL Restrictions and constraints on ranges."@en ;
+	owl:versionIRI <http://www.w3.org/ns/shacl-owl#1.2> ;
+	.
+
+sh:AbstractResult
+	a owl:Class ;
+	.
+
+sh:ConstraintComponent
+	a owl:Class ;
+	.
+
+sh:DataGraph
+	a owl:Class ;
+	.
+
+sh:Function
+	a owl:Class ;
+	.
+
+sh:Graph
+	a owl:Class ;
+	.
+
+sh:JSConstraint
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
+	.
+
+sh:JSExecutable
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
+	.
+
+sh:JSFunction
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
+	.
+
+sh:JSLibrary
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
+	.
+
+sh:JSRule
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
+	.
+
+sh:JSTarget
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
+	.
+
+sh:JSTargetType
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
+	.
+
+sh:JSValidator
+	a
+		owl:Class ,
+		owl:DeprecatedClass
+		;
+	.
+
+sh:ListParameterExpression
+	a owl:Class ;
+	.
+
+sh:ListParameterExpressionFunction
+	a owl:Class ;
+	.
+
+sh:NamedParameterExpression
+	a owl:Class ;
+	.
+
+sh:NamedParameterExpressionFunction
+	a owl:Class ;
+	.
+
+sh:NodeExpression
+	a owl:Class ;
+	.
+
+sh:NodeExpressionFunction
+	a owl:Class ;
+	.
+
+sh:NodeKind
+	a owl:Class ;
+	.
+
+sh:NodeShape
+	a owl:Class ;
+	.
+
+sh:Parameter
+	a owl:Class ;
+	.
+
+sh:Parameterizable
+	a owl:Class ;
+	.
+
+sh:PrefixDeclaration
+	a owl:Class ;
+	.
+
+sh:PropertyGroup
+	a owl:Class ;
+	.
+
+sh:PropertyShape
+	a owl:Class ;
+	.
+
+sh:ResultAnnotation
+	a owl:Class ;
+	.
+
+sh:Rule
+	a owl:Class ;
+	.
+
+sh:SPARQLAskExecutable
+	a owl:Class ;
+	.
+
+sh:SPARQLAskValidator
+	a owl:Class ;
+	.
+
+sh:SPARQLConstraint
+	a owl:Class ;
+	.
+
+sh:SPARQLConstructExecutable
+	a owl:Class ;
+	.
+
+sh:SPARQLDescribeExecutable
+	a owl:Class ;
+	.
+
+sh:SPARQLExecutable
+	a owl:Class ;
+	.
+
+sh:SPARQLExprExpression
+	a owl:Class ;
+	.
+
+sh:SPARQLFunction
+	a owl:Class ;
+	.
+
+sh:SPARQLRule
+	a owl:Class ;
+	.
+
+sh:SPARQLSelectExecutable
+	a owl:Class ;
+	.
+
+sh:SPARQLSelectValidator
+	a owl:Class ;
+	.
+
+sh:SPARQLTarget
+	a owl:Class ;
+	.
+
+sh:SPARQLTargetType
+	a owl:Class ;
+	.
+
+sh:SPARQLUpdateExecutable
+	a owl:Class ;
+	.
+
+sh:SelectExpression
+	a owl:Class ;
+	.
+
+sh:Severity
+	a owl:Class ;
+	.
+
+sh:Shape
+	a owl:Class ;
+	.
+
+sh:ShapeClass
+	a owl:Class ;
+	.
+
+sh:ShapesGraph
+	a owl:Class ;
+	.
+
+sh:Target
+	a owl:Class ;
+	.
+
+sh:TargetType
+	a owl:Class ;
+	.
+
+sh:TripleRule
+	a owl:Class ;
+	.
+
+sh:ValidationReport
+	a owl:Class ;
+	.
+
+sh:ValidationResult
+	a owl:Class ;
+	.
+
+sh:Validator
+	a owl:Class ;
+	.
+
+sh:agentInstruction
+	a owl:AnnotationProperty ;
+	.
+
+sh:alternativePath
+	a owl:AnnotationProperty ;
+	.
+
+sh:and
+	a owl:AnnotationProperty ;
+	.
+
+sh:annotationProperty
+	a owl:AnnotationProperty ;
+	.
+
+sh:annotationValue
+	a owl:AnnotationProperty ;
+	.
+
+sh:annotationVarName
+	a owl:AnnotationProperty ;
+	.
+
+sh:ask
+	a owl:AnnotationProperty ;
+	.
+
+sh:bodyExpression
+	a owl:AnnotationProperty ;
+	.
+
+sh:class
+	a owl:AnnotationProperty ;
+	.
+
+sh:closed
+	a owl:AnnotationProperty ;
+	.
+
+sh:codeIdentifier
+	a owl:AnnotationProperty ;
+	.
+
+sh:condition
+	a owl:AnnotationProperty ;
+	.
+
+sh:conformanceDisallows
+	a owl:AnnotationProperty ;
+	.
+
+sh:conforms
+	a owl:AnnotationProperty ;
+	.
+
+sh:conformsTo
+	a owl:ObjectProperty ;
+	rdfs:seeAlso
+		<https://github.com/w3c/dx-prof/issues/29> ,
+		<https://github.com/w3c/dx-prof/issues/59>
+		;
+	.
+
+sh:construct
+	a owl:AnnotationProperty ;
+	.
+
+sh:datatype
+	a owl:AnnotationProperty ;
+	.
+
+sh:deactivated
+	a owl:AnnotationProperty ;
+	.
+
+sh:declare
+	a owl:AnnotationProperty ;
+	.
+
+sh:defaultValue
+	a owl:AnnotationProperty ;
+	.
+
+sh:describe
+	a owl:AnnotationProperty ;
+	.
+
+sh:description
+	a owl:AnnotationProperty ;
+	.
+
+sh:detail
+	a owl:AnnotationProperty ;
+	.
+
+sh:disjoint
+	a owl:AnnotationProperty ;
+	.
+
+sh:entailment
+	a owl:AnnotationProperty ;
+	.
+
+sh:equals
+	a owl:AnnotationProperty ;
+	.
+
+sh:expression
+	a owl:AnnotationProperty ;
+	.
+
+sh:filterShape
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
+	.
+
+sh:flags
+	a owl:AnnotationProperty ;
+	.
+
+sh:focusNode
+	a owl:AnnotationProperty ;
+	.
+
+sh:formalized
+	a owl:AnnotationProperty ;
+	.
+
+sh:group
+	a owl:AnnotationProperty ;
+	.
+
+sh:hasValue
+	a owl:AnnotationProperty ;
+	.
+
+sh:ignoredProperties
+	a owl:AnnotationProperty ;
+	.
+
+sh:in
+	a owl:AnnotationProperty ;
+	.
+
+sh:intent
+	a owl:AnnotationProperty ;
+	.
+
+sh:intersection
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
+	.
+
+sh:inversePath
+	a owl:AnnotationProperty ;
+	.
+
+sh:js
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
+	.
+
+sh:jsFunctionName
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
+	.
+
+sh:jsLibrary
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
+	.
+
+sh:jsLibraryURL
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
+	.
+
+sh:keyParameter
+	a owl:AnnotationProperty ;
+	.
+
+sh:labelTemplate
+	a owl:AnnotationProperty ;
+	.
+
+sh:languageIn
+	a owl:AnnotationProperty ;
+	.
+
+sh:lessThan
+	a owl:AnnotationProperty ;
+	.
+
+sh:lessThanOrEquals
+	a owl:AnnotationProperty ;
+	.
+
+sh:maxCount
+	a owl:AnnotationProperty ;
+	.
+
+sh:maxExclusive
+	a owl:AnnotationProperty ;
+	.
+
+sh:maxInclusive
+	a owl:AnnotationProperty ;
+	.
+
+sh:maxLength
+	a owl:AnnotationProperty ;
+	.
+
+sh:maxListLength
+	a owl:AnnotationProperty ;
+	.
+
+sh:memberShape
+	a owl:AnnotationProperty ;
+	.
+
+sh:message
+	a owl:AnnotationProperty ;
+	.
+
+sh:minCount
+	a owl:AnnotationProperty ;
+	.
+
+sh:minExclusive
+	a owl:AnnotationProperty ;
+	.
+
+sh:minInclusive
+	a owl:AnnotationProperty ;
+	.
+
+sh:minLength
+	a owl:AnnotationProperty ;
+	.
+
+sh:minListLength
+	a owl:AnnotationProperty ;
+	.
+
+sh:name
+	a owl:AnnotationProperty ;
+	.
+
+sh:namespace
+	a owl:AnnotationProperty ;
+	.
+
+sh:node
+	a owl:AnnotationProperty ;
+	.
+
+sh:nodeByExpression
+	a owl:AnnotationProperty ;
+	.
+
+sh:nodeKind
+	a owl:AnnotationProperty ;
+	.
+
+sh:nodeValidator
+	a owl:AnnotationProperty ;
+	.
+
+sh:nodes
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
+	.
+
+sh:not
+	a owl:AnnotationProperty ;
+	.
+
+sh:object
+	a owl:AnnotationProperty ;
+	.
+
+sh:oneOrMorePath
+	a owl:AnnotationProperty ;
+	.
+
+sh:optional
+	a owl:AnnotationProperty ;
+	.
+
+sh:or
+	a owl:AnnotationProperty ;
+	.
+
+sh:order
+	a owl:AnnotationProperty ;
+	.
+
+sh:parameter
+	a owl:AnnotationProperty ;
+	.
+
+sh:path
+	a owl:AnnotationProperty ;
+	.
+
+sh:pattern
+	a owl:AnnotationProperty ;
+	.
+
+sh:predicate
+	a owl:AnnotationProperty ;
+	.
+
+sh:prefix
+	a owl:AnnotationProperty ;
+	.
+
+sh:prefixes
+	a owl:AnnotationProperty ;
+	.
+
+sh:property
+	a owl:AnnotationProperty ;
+	.
+
+sh:propertyValidator
+	a owl:AnnotationProperty ;
+	.
+
+sh:qualifiedMaxCount
+	a owl:AnnotationProperty ;
+	.
+
+sh:qualifiedMinCount
+	a owl:AnnotationProperty ;
+	.
+
+sh:qualifiedValueShape
+	a owl:AnnotationProperty ;
+	.
+
+sh:qualifiedValueShapesDisjoint
+	a owl:AnnotationProperty ;
+	.
+
+sh:reificationRequired
+	a owl:AnnotationProperty ;
+	.
+
+sh:reifierShape
+	a owl:AnnotationProperty ;
+	.
+
+sh:result
+	a owl:AnnotationProperty ;
+	.
+
+sh:resultAnnotation
+	a owl:AnnotationProperty ;
+	.
+
+sh:resultMessage
+	a owl:AnnotationProperty ;
+	.
+
+sh:resultPath
+	a owl:AnnotationProperty ;
+	.
+
+sh:resultSeverity
+	a owl:AnnotationProperty ;
+	.
+
+sh:returnType
+	a owl:AnnotationProperty ;
+	.
+
+sh:rootClass
+	a owl:AnnotationProperty ;
+	.
+
+sh:rule
+	a owl:AnnotationProperty ;
+	.
+
+sh:select
+	a owl:AnnotationProperty ;
+	.
+
+sh:severity
+	a owl:AnnotationProperty ;
+	.
+
+sh:shape
+	a owl:AnnotationProperty ;
+	.
+
+sh:shapesGraph
+	a owl:AnnotationProperty ;
+	.
+
+sh:shapesGraphWellFormed
+	a owl:AnnotationProperty ;
+	.
+
+sh:singleLine
+	a owl:AnnotationProperty ;
+	.
+
+sh:someValue
+	a owl:AnnotationProperty ;
+	.
+
+sh:sourceConstraint
+	a owl:AnnotationProperty ;
+	.
+
+sh:sourceConstraintComponent
+	a owl:AnnotationProperty ;
+	.
+
+sh:sourceShape
+	a owl:AnnotationProperty ;
+	.
+
+sh:sparql
+	a owl:AnnotationProperty ;
+	.
+
+sh:sparqlExpr
+	a owl:AnnotationProperty ;
+	.
+
+sh:subject
+	a owl:AnnotationProperty ;
+	.
+
+sh:subsetOf
+	a owl:AnnotationProperty ;
+	.
+
+sh:suggestedShapesGraph
+	a owl:AnnotationProperty ;
+	.
+
+sh:target
+	a owl:AnnotationProperty ;
+	.
+
+sh:targetClass
+	a owl:AnnotationProperty ;
+	.
+
+sh:targetNode
+	a owl:AnnotationProperty ;
+	.
+
+sh:targetObjectsOf
+	a owl:AnnotationProperty ;
+	.
+
+sh:targetSubjectsOf
+	a owl:AnnotationProperty ;
+	.
+
+sh:targetWhere
+	a owl:AnnotationProperty ;
+	.
+
+sh:union
+	a
+		owl:AnnotationProperty ,
+		owl:DeprecatedProperty
+		;
+	.
+
+sh:uniqueLang
+	a owl:AnnotationProperty ;
+	.
+
+sh:uniqueMembers
+	a owl:AnnotationProperty ;
+	.
+
+sh:uniqueValuesFor
+	a owl:AnnotationProperty ;
+	.
+
+sh:unit
+	a owl:AnnotationProperty ;
+	.
+
+sh:update
+	a owl:AnnotationProperty ;
+	.
+
+sh:usedShapesGraph
+	a owl:AnnotationProperty ;
+	.
+
+sh:validationReport
+	a owl:AnnotationProperty ;
+	.
+
+sh:validator
+	a owl:AnnotationProperty ;
+	.
+
+sh:value
+	a owl:AnnotationProperty ;
+	.
+
+sh:xone
+	a owl:AnnotationProperty ;
+	.
+
+sh:zeroOrMorePath
+	a owl:AnnotationProperty ;
+	.
+
+sh:zeroOrOnePath
+	a owl:AnnotationProperty ;
+	.
+
+shnex:ConcatExpression
+	a owl:Class ;
+	.
+
+shnex:CountExpression
+	a owl:Class ;
+	.
+
+shnex:DistinctExpression
+	a owl:Class ;
+	.
+
+shnex:EmptyExpression
+	a owl:Class ;
+	.
+
+shnex:ExistsExpression
+	a owl:Class ;
+	.
+
+shnex:FilterShapeExpression
+	a owl:Class ;
+	.
+
+shnex:FindFirstExpression
+	a owl:Class ;
+	.
+
+shnex:FlatMapExpression
+	a owl:Class ;
+	.
+
+shnex:IfExpression
+	a owl:Class ;
+	.
+
+shnex:InstancesOfExpression
+	a owl:Class ;
+	.
+
+shnex:IntersectionExpression
+	a owl:Class ;
+	.
+
+shnex:LimitExpression
+	a owl:Class ;
+	.
+
+shnex:ListExpression
+	a owl:Class ;
+	.
+
+shnex:MatchAllExpression
+	a owl:Class ;
+	.
+
+shnex:MaxExpression
+	a owl:Class ;
+	.
+
+shnex:MinExpression
+	a owl:Class ;
+	.
+
+shnex:NodesMatchingExpression
+	a owl:Class ;
+	.
+
+shnex:OffsetExpression
+	a owl:Class ;
+	.
+
+shnex:OrderByExpression
+	a owl:Class ;
+	.
+
+shnex:PathValuesExpression
+	a owl:Class ;
+	.
+
+shnex:RemoveExpression
+	a owl:Class ;
+	.
+
+shnex:SumExpression
+	a owl:Class ;
+	.
+
+shnex:VarExpression
+	a owl:Class ;
+	.
+
+shnex:concat
+	a owl:AnnotationProperty ;
+	.
+
+shnex:count
+	a owl:AnnotationProperty ;
+	.
+
+shnex:desc
+	a owl:AnnotationProperty ;
+	.
+
+shnex:distinct
+	a owl:AnnotationProperty ;
+	.
+
+shnex:else
+	a owl:AnnotationProperty ;
+	.
+
+shnex:exists
+	a owl:AnnotationProperty ;
+	.
+
+shnex:filterShape
+	a owl:AnnotationProperty ;
+	.
+
+shnex:findFirst
+	a owl:AnnotationProperty ;
+	.
+
+shnex:flatMap
+	a owl:AnnotationProperty ;
+	.
+
+shnex:if
+	a owl:AnnotationProperty ;
+	.
+
+shnex:instancesOf
+	a owl:AnnotationProperty ;
+	.
+
+shnex:intersection
+	a owl:AnnotationProperty ;
+	.
+
+shnex:limit
+	a owl:AnnotationProperty ;
+	.
+
+shnex:matchAll
+	a owl:AnnotationProperty ;
+	.
+
+shnex:max
+	a owl:AnnotationProperty ;
+	.
+
+shnex:min
+	a owl:AnnotationProperty ;
+	.
+
+shnex:nodes
+	a owl:AnnotationProperty ;
+	.
+
+shnex:nodesMatching
+	a owl:AnnotationProperty ;
+	.
+
+shnex:offset
+	a owl:AnnotationProperty ;
+	.
+
+shnex:orderBy
+	a owl:AnnotationProperty ;
+	.
+
+shnex:pathValues
+	a owl:AnnotationProperty ;
+	.
+
+shnex:remove
+	a owl:AnnotationProperty ;
+	.
+
+shnex:sum
+	a owl:AnnotationProperty ;
+	.
+
+shnex:then
+	a owl:AnnotationProperty ;
+	.
+
+shnex:var
+	a owl:AnnotationProperty ;
+	.
+
+shnex-sparql:category
+	a owl:AnnotationProperty ;
+	.
+
+shnex-sparql:example
+	a owl:AnnotationProperty ;
+	.
+
+shnex-sparql:infixOperator
+	a owl:AnnotationProperty ;
+	.
+
+sparql:abs
+	a owl:Class ;
+	.
+
+sparql:bnode
+	a owl:Class ;
+	.
+
+sparql:bound
+	a owl:Class ;
+	.
+
+sparql:ceil
+	a owl:Class ;
+	.
+
+sparql:coalesce
+	a owl:Class ;
+	.
+
+sparql:concat
+	a owl:Class ;
+	.
+
+sparql:contains
+	a owl:Class ;
+	.
+
+sparql:datatype
+	a owl:Class ;
+	.
+
+sparql:day
+	a owl:Class ;
+	.
+
+sparql:divide
+	a owl:Class ;
+	.
+
+sparql:encode
+	a owl:Class ;
+	.
+
+sparql:equals
+	a owl:Class ;
+	.
+
+sparql:floor
+	a owl:Class ;
+	.
+
+sparql:greater-than
+	a owl:Class ;
+	.
+
+sparql:greater-than-or-equal
+	a owl:Class ;
+	.
+
+sparql:hasLang
+	a owl:Class ;
+	.
+
+sparql:hasLangdir
+	a owl:Class ;
+	.
+
+sparql:hours
+	a owl:Class ;
+	.
+
+sparql:if
+	a owl:Class ;
+	.
+
+sparql:iri
+	a owl:Class ;
+	.
+
+sparql:isBlank
+	a owl:Class ;
+	.
+
+sparql:isIRI
+	a owl:Class ;
+	.
+
+sparql:isLiteral
+	a owl:Class ;
+	.
+
+sparql:isNumeric
+	a owl:Class ;
+	.
+
+sparql:isTriple
+	a owl:Class ;
+	.
+
+sparql:isURI
+	a owl:Class ;
+	.
+
+sparql:lang
+	a owl:Class ;
+	.
+
+sparql:langMatches
+	a owl:Class ;
+	.
+
+sparql:langdir
+	a owl:Class ;
+	.
+
+sparql:lcase
+	a owl:Class ;
+	.
+
+sparql:less-than
+	a owl:Class ;
+	.
+
+sparql:less-than-or-equal
+	a owl:Class ;
+	.
+
+sparql:logical-and
+	a owl:Class ;
+	.
+
+sparql:logical-not
+	a owl:Class ;
+	.
+
+sparql:logical-or
+	a owl:Class ;
+	.
+
+sparql:md5
+	a owl:Class ;
+	.
+
+sparql:minutes
+	a owl:Class ;
+	.
+
+sparql:month
+	a owl:Class ;
+	.
+
+sparql:multiply
+	a owl:Class ;
+	.
+
+sparql:not-equals
+	a owl:Class ;
+	.
+
+sparql:now
+	a owl:Class ;
+	.
+
+sparql:object
+	a owl:Class ;
+	.
+
+sparql:plus
+	a owl:Class ;
+	.
+
+sparql:predicate
+	a owl:Class ;
+	.
+
+sparql:rand
+	a owl:Class ;
+	.
+
+sparql:regex
+	a owl:Class ;
+	.
+
+sparql:replace
+	a owl:Class ;
+	.
+
+sparql:round
+	a owl:Class ;
+	.
+
+sparql:sameTerm
+	a owl:Class ;
+	.
+
+sparql:sameValue
+	a owl:Class ;
+	.
+
+sparql:seconds
+	a owl:Class ;
+	.
+
+sparql:sha1
+	a owl:Class ;
+	.
+
+sparql:sha256
+	a owl:Class ;
+	.
+
+sparql:sha384
+	a owl:Class ;
+	.
+
+sparql:sha512
+	a owl:Class ;
+	.
+
+sparql:str
+	a owl:Class ;
+	.
+
+sparql:strafter
+	a owl:Class ;
+	.
+
+sparql:strbefore
+	a owl:Class ;
+	.
+
+sparql:strdt
+	a owl:Class ;
+	.
+
+sparql:strends
+	a owl:Class ;
+	.
+
+sparql:strlang
+	a owl:Class ;
+	.
+
+sparql:strlangdir
+	a owl:Class ;
+	.
+
+sparql:strlen
+	a owl:Class ;
+	.
+
+sparql:strstarts
+	a owl:Class ;
+	.
+
+sparql:struuid
+	a owl:Class ;
+	.
+
+sparql:subject
+	a owl:Class ;
+	.
+
+sparql:substr
+	a owl:Class ;
+	.
+
+sparql:subtract
+	a owl:Class ;
+	.
+
+sparql:timezone
+	a owl:Class ;
+	.
+
+sparql:triple
+	a owl:Class ;
+	.
+
+sparql:tz
+	a owl:Class ;
+	.
+
+sparql:ucase
+	a owl:Class ;
+	.
+
+sparql:unary-minus
+	a owl:Class ;
+	.
+
+sparql:unary-plus
+	a owl:Class ;
+	.
+
+sparql:uri
+	a owl:Class ;
+	.
+
+sparql:uuid
+	a owl:Class ;
+	.
+
+sparql:year
+	a owl:Class ;
+	.
+
