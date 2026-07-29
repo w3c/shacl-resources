@@ -150,6 +150,10 @@ sh:Rule
 	a owl:Class ;
 	.
 
+sh:RulesGraph
+	a owl:Class ;
+	.
+
 sh:SPARQLAskExecutable
 	a owl:Class ;
 	.
