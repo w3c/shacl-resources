@@ -655,6 +655,10 @@ sh:rule
 	a owl:AnnotationProperty ;
 	.
 
+sh:runOnce
+	a owl:AnnotationProperty ;
+	.
+
 sh:select
 	a owl:AnnotationProperty ;
 	.
@@ -700,6 +704,10 @@ sh:sparql
 	.
 
 sh:sparqlExpr
+	a owl:AnnotationProperty ;
+	.
+
+sh:stratum
 	a owl:AnnotationProperty ;
 	.
 
