@@ -1,0 +1,59 @@
+@prefix shui:    <http://www.w3.org/ns/shacl-ui/> .
+@prefix shuic:   <http://www.w3.org/ns/shacl-ui-community/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+
+#################################################################
+# SHACL UI Community Widget Registry — machine-readable index
+#
+# This file is the catalog of community-contributed SHACL UI widgets. It is
+# maintained in the w3c/shacl-resources repository and remains editable after
+# the SHACL 1.2 UI specification and the `shui` namespace are locked.
+#
+# To register a widget:
+#   1. Add its Turtle file under widgets/<WidgetName>.ttl (copy _template.ttl).
+#   2. Add an `owl:imports` line and a `shuic:hasWidget` line below.
+# See CONTRIBUTING.md for details.
+#################################################################
+
+#################################################################
+# Minimal self-describing terms in the community namespace.
+# (These live in the community-controlled namespace, so they can evolve
+#  independently of the locked `shui` namespace.)
+#################################################################
+
+shuic:WidgetRegistry
+    a rdfs:Class , owl:Class ;
+    rdfs:label "Widget Registry" ;
+    rdfs:comment "A catalog of community-contributed SHACL UI widgets (viewers and editors)." ;
+.
+
+shuic:hasWidget
+    a rdf:Property , owl:ObjectProperty ;
+    rdfs:label "has widget" ;
+    rdfs:comment "Relates a widget registry to a registered community widget (an instance of shui:Editor or shui:Viewer)." ;
+    rdfs:domain shuic:WidgetRegistry ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( shui:Editor shui:Viewer ) ] ;
+.
+
+#################################################################
+# The registry resource.
+#################################################################
+
+shuic:widgetRegistry
+    a shuic:WidgetRegistry ;
+    rdfs:label "SHACL UI Community Widget Registry" ;
+    rdfs:seeAlso <https://www.w3.org/TR/shacl12-ui/#community-widget-registry> ;
+    rdfs:seeAlso <https://github.com/w3c/data-shapes/issues/718> ;
+
+    # -------------------------------------------------------------
+    # Registered widgets are listed below. The registry is currently
+    # EMPTY: no community widgets have been registered yet.
+    #
+    # When adding a widget, uncomment/add lines following this pattern:
+    #
+    #   owl:imports <widgets/ExampleViewer.ttl> ;
+    #   shuic:hasWidget shuic:ExampleViewer ;
+    # -------------------------------------------------------------
+.

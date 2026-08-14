@@ -1,0 +1,37 @@
+name: SHACL UI Community Widget Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validate-community-widgets:
+    name: Validate Community Widgets
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v5
+      - run: uv tool install 'pyshacl@0.31.0'
+
+      - name: Fetch the Widget Score validator from the SHACL 1.2 UI specification
+        run: |
+          curl -fsSL \
+            https://raw.githubusercontent.com/w3c/data-shapes/gh-pages/shacl12-ui/widgets/score-validator.ttl \
+            -o /tmp/score-validator.ttl
+
+      - name: Validate registered community widgets
+        run: |
+          set -euo pipefail
+
+          SHAPES_FILE="/tmp/score-validator.ttl"
+          WIDGETS_DIR="shacl-ui/widgets"
+
+          # Validate every registered widget file, skipping the template.
+          find "$WIDGETS_DIR" -type f -name '*.ttl' ! -name '_template.ttl' -print0 \
+            | while IFS= read -r -d '' widget; do
+              echo "Validating: $widget"
+              pyshacl -s "$SHAPES_FILE" "$widget"
+            done

@@ -14,6 +14,7 @@ Initial resources in here were created by the re-established [W3C Data Shapes Wo
 `profiles-of-shacl/` | Profiles of SHACL 1.2
 `shacl-owl/` | A SHACL graph known as "SHACL-OWL", which is used to cast SHACL concepts as OWL classes and properties as per [SHACL-OWL](https://w3c.github.io/data-shapes/shacl12-overview/#shacl-owl)
 `shacl-shacl/` | The [SHACL-SHACL](https://w3c.github.io/data-shapes/shacl12-overview/#shacl-shacl) shapes graphs used to validate other shapes graphs
+`shacl-ui/` | A community-maintained registry of [SHACL 1.2 UI](https://www.w3.org/TR/shacl12-ui/) widgets (viewers and editors) that extend the built-in widgets defined in the specification
 
 
 ## License
