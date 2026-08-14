@@ -1,0 +1,78 @@
+@prefix shui:    <http://www.w3.org/ns/shacl-ui/> .
+@prefix shuic:   <http://www.w3.org/ns/shacl-ui-community/> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+#################################################################
+# TEMPLATE — copy this file to widgets/<WidgetName>.ttl and fill it in.
+#
+# A community widget is an instance of one of the widget classes defined by
+# the SHACL 1.2 UI specification:
+#   - Editors: shui:Editor, refined as shui:SingleEditor or shui:MultiEditor
+#   - Viewers: shui:Viewer, refined as shui:SingleViewer or shui:MultiViewer
+#
+# Give the widget an IRI in the community namespace
+#   http://www.w3.org/ns/shacl-ui-community/  (prefix shuic:)
+# so it never collides with the locked `shui` namespace.
+#
+# This file mirrors the structure of the specification's built-in widget files:
+# it declares the widget, describes it, and (optionally) provides shui:WidgetScore
+# instances plus the matcher shapes they reference, so that renderers can select
+# the widget automatically via the Scoring System.
+#
+# After creating the file, register it in ../registry.ttl (see CONTRIBUTING.md).
+#################################################################
+
+##
+## 1. The widget itself
+##
+shuic:ExampleViewer
+    # --- Type: pick the appropriate widget class ---
+    a shui:SingleViewer ;               # shui:(Single|Multi)Viewer, shui:(Single|Multi)Editor
+
+    # --- Human-readable metadata ---
+    rdfs:label "Example Viewer" ;
+    rdfs:comment "A description of what this widget renders or edits, which datatypes or value kinds it targets, and any implementation notes." ;
+
+    # --- Attribution and links ---
+    dcterms:creator "Contributor Name (or organisation)" ;
+    rdfs:seeAlso <https://example.org/docs/example-viewer> ;   # human documentation, if any
+.
+
+##
+## 2. Scoring
+##    Describe how the widget participates in the SHACL UI Scoring System so that
+##    renderers can select it automatically. See the specification's
+##    "Scoring System" and "Built-in Widgets" sections for the semantics of
+##    shui:score, shui:dataGraphShape, and shui:shapesGraphShape.
+##
+# shuic:exampleViewerScore40
+#     a shui:WidgetScore ;
+#     shui:widget shuic:ExampleViewer ;
+#     shui:score 40 ;
+#     shui:shapesGraphShape shuic:prefersExampleViewer ;
+# .
+#
+# shuic:exampleViewerScore10
+#     a shui:WidgetScore ;
+#     shui:widget shuic:ExampleViewer ;
+#     shui:score 10 ;
+#     shui:dataGraphShape shuic:exampleValueShape ;
+# .
+
+##
+## 3. Matcher shapes referenced by the scores above (as needed).
+##
+# shuic:prefersExampleViewer
+#     a sh:NodeShape ;
+#     sh:property [
+#         sh:path shui:viewer ;      # or shui:editor for an editor
+#         sh:hasValue shuic:ExampleViewer ;
+#     ] ;
+# .
+#
+# shuic:exampleValueShape
+#     a sh:NodeShape ;
+#     # ... constraints identifying the values this widget applies to ...
+# .
