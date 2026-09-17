@@ -17,7 +17,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a prof:ResourceDescriptor ;
     dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
     dcterms:format "text/turtle" ;
-    prof:hasArtifact "http://www.w3.org/ns/shacl-shacl/ui"^^xsd:anyURI ;
+    prof:hasArtifact <http://www.w3.org/ns/shacl-shacl/ui> ;
     prof:hasRole role:Validation ;
 .
 
@@ -25,6 +25,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a prof:ResourceDescriptor ;
     dcterms:conformsTo <http://www.w3.org/TR/html5/> ;
     dcterms:format "text/html" ;
-    prof:hasArtifact "https://www.w3.org/TR/shacl12-ui/"^^xsd:anyURI ;
+    prof:hasArtifact <https://www.w3.org/TR/shacl12-ui/> ;
     prof:hasRole role:Specification ;
 .

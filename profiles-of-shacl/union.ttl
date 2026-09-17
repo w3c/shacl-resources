@@ -22,6 +22,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a prof:ResourceDescriptor ;
     dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
     dcterms:format "text/turtle" ;
-    prof:hasArtifact "http://www.w3.org/ns/shacl-shacl/union"^^xsd:anyURI ;
+    prof:hasArtifact <http://www.w3.org/ns/shacl-shacl/union> ;
     prof:hasRole role:Validation ;
 .
