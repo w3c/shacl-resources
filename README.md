@@ -11,6 +11,7 @@ Initial resources in here were created by the re-established [W3C Data Shapes Wo
 
 **Directory** | **Content**  
 --- | ---
+`null-profiles/` | [null profiles](https://www.w3.org/TR/dx-prof-1.0/#null-profiles) of standards created using SHACL as a [validation](https://www.w3.org/TR/dx-prof-1.0/#Role:validation) resource
 `profiles-of-shacl/` | Profiles of SHACL 1.2
 `shacl-owl/` | A SHACL graph known as "SHACL-OWL", which is used to cast SHACL concepts as OWL classes and properties as per [SHACL-OWL](https://w3c.github.io/data-shapes/shacl12-overview/#shacl-owl)
 `shacl-shacl/` | The [SHACL-SHACL](https://w3c.github.io/data-shapes/shacl12-overview/#shacl-shacl) shapes graphs used to validate other shapes graphs
